@@ -60,7 +60,7 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/Customer'
-                '400':
+        '400':
           description: Bad Request
         '404':
           description: Not Found
