@@ -31,8 +31,6 @@ public class CustomerController implements CustomerApi {
         
         Customer response = service.getCustomer(id);
 
-        //TODO: Add validation logic for customerId
-
         if(response == null){
             return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
         }
